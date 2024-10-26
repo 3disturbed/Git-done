@@ -1,4 +1,6 @@
 # Git-done
+![logo](https://github.com/user-attachments/assets/2bba6cae-3109-41c8-a9a6-e064c28fe264)
+
 ## Readme is Work in progress...
 
 ## 🧭 Welcome to Git-done!
@@ -45,15 +47,15 @@ git clone https://github.com/3disturbed/Git-done.git
 
 ```
 
-🛠️ ##Usage
+## 🛠️ Usage
 Select an Action: Choose the Git operation you want to perform from the list.
 Identify the Error: If you encounter an issue, select the corresponding error from the options provided.
 Receive a Solution: Follow the step-by-step guide to resolve the error and continue your Git journey.
 
-📸   ##Screenshots
+## 📸  Screenshots
 
 
-🤝 ##Contributing
+## 🤝 Contributing
 We welcome contributions from the community! Whether it's reporting bugs, suggesting features, or submitting pull requests, your input helps make Git-done better for everyone.
 
 Fork the Repository
@@ -75,7 +77,7 @@ git push origin feature/YourFeatureName
 Open a Pull Request
 Please ensure your contributions adhere to the Code of Conduct.
 
-📝 License
+## 📝 License
 This project is licensed under the MIT License.
 
 📬 Contact
