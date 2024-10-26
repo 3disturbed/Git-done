@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ben Darlington's Git-done Wizard</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="wizard">
+
+        <div class="progress-indicator">
+            <span class="active" id="progress-1">Task</span>
+            <span id="progress-2">Error</span>
+            <span id="progress-3">Solution</span>
+        </div>
+        <!-- Step 1: Select Action -->
+        <div class="container active" id="step-1">
+        
+            
+            <div class="actions">
+                <button onclick="selectAction('clone')">Clone a Repository</button>
+                <button onclick="selectAction('init')">Initialize a Repository</button>
+                <button onclick="selectAction('commit')">Commit Changes</button>
+                <button onclick="selectAction('push')">Push Changes</button>
+                <button onclick="selectAction('pull')">Pull Changes</button>
+                <button onclick="selectAction('branch')">Manage Branches</button>
+                <button onclick="selectAction('merge')">Merge Branches</button>
+                <button onclick="selectAction('rebase')">Rebase Branches</button>
+                <button onclick="selectAction('stash')">Stash Changes</button>
+                <button onclick="selectAction('reset')">Undo Changes</button>
+                <button onclick="selectAction('log')">View History</button>
+                <button onclick="selectAction('remote')">Manage Remotes</button>
+            </div>
+
+
+                <h2>Not sure what to do? Try running <code>git status</code> to see what's going on.</h2>
+
+            
+
+        </div>
+
+        <!-- Step 2: Select Error -->
+        <div class="container" id="step-2">
+            
+            <div class="actions">
+                <button id="backButton" class="back-button" onclick="goToStep(--step)">Back</button>
+                <button onclick="selectError('conflict')">Something about a Conflict</button>
+                <button onclick="selectError('rejected')">Push Rejected</button>
+                <button onclick="selectError('not permitted')">Permission Issues</button>
+                <button onclick="selectError('authentication')">Authentication Problems</button>
+                <button onclick="selectError('already exists')">Branch Already Exists</button>
+                <button onclick="selectError('nothing to commit')">Nothing to Commit</button>
+                <button onclick="selectError('detached head')">Detached HEAD State</button>
+                <button onclick="selectError('merge failed')">Merge Failed</button>
+                <button onclick="selectError('cannot fast-forward')">Cannot Fast-Forward</button>
+                <button onclick="selectError('ssl')">SSL Certificate Problems</button>
+                <button onclick="selectError('no error')">No Specific Error</button>
+            </div>
+    
+            
+        </div>
+        
+        <!-- Step 3: Display Solution -->
+        <div class="container" id="step-3">
+            <button id="backButton" class="back-button" onclick="goToStep(--step)">Back</button>
+            <div class="solution" id="solution"></div>
+            
+
+        </div>
+            <!-- Progress Indicator -->
+    </div>
+
+    <footer>
+        <div class="links"> 
+            <img src="/img/Git-Done-Logo.webp" alt="Git-done Logo"class="logo" >
+            <h4 style="width:20%;">Created by <br><a href="">Ben Darlington</a></h4> 
+                <a class="linkItem" href="https://github.com/3disturbed"><button >Visit My Github</button></a>
+                <a class="linkItem" href="https://www.linkedin.com/in/darlingtonben/"><button >Visit My LinkedIn</button></a>
+                <h4 style="width:20%;">Styled by <br><a href="">Sarah Darlington</a></h4> 
+                <a class="linkItem" href="https://github.com/Sazzzel"><button >Visit My Github</button></a>
+                <a class="linkItem" href="https://www.linkedin.com/in/sarah-darlington-dev/"><button >Visit My LinkedIn</button></a>
+            
+
+        </div> 
+    </footer> 
+    <script src="src/app.js"></script>
+</body>
+</html>

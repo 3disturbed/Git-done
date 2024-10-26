@@ -1,0 +1,245 @@
+/* 
+Style By Sazzzel (Sarah Darlington) under Mentor Ben Darlington 
+Style for Git-Done Wizard
+*/
+body {
+    font-family: Arial, sans-serif;
+    max-width: 80vw;
+    margin: 0 auto;
+    background-color: #6F8FAF;
+    color: #007bff;
+
+    /* Logo */
+    .logo {
+        position: fixed;
+        bottom: 5vh;
+        left: 3vh;
+        display: block;
+        margin: 0 auto;
+        width: 10vw;
+    }
+
+    /* Headings */
+    h1 {
+        text-align: center;
+        font-size: 2vh;
+    }
+
+    h2,
+    h3 {
+        color: #060411;
+        text-shadow: 1vh 1vh 2vh #6f6d8f;
+        text-align: center;
+        font-size: 2vh;
+
+        &:last-of-type {
+            margin: 3vh 0;
+        }
+    }
+
+    h4 {
+        color: #ffffff;
+        text-shadow: 0.1vh 0.1vh 1vh #000000;
+        text-align: center;
+        font-size: 1.4vh;
+    }
+
+    /* Horizontal Rule */
+    hr {
+        border: 0.1vh solid #17113a;
+    }
+
+    /* Container */
+    .container {
+        padding: auto;
+        border-radius: 3vh;
+        display: none;
+        background-color: #0969a1;
+        color: #f8f9fa;
+        margin: auto;
+        border: 1vh solid #1d1d1d;
+        box-shadow: 1vh 1vh 2vh #17113a;
+        overflow: auto;
+
+        &.active {
+            height: 70vh;
+            display: block;
+        }
+
+        /* Solution Box */
+        .solution {
+            height: 70%;
+            padding: 1vh;
+            border: 1vh solid #1d1d1d;
+            background-color: #0ea2cf;
+            color: #000000;
+            border-radius: 2vh;
+            box-shadow: 1vh 1vh 3vh #17113a;
+        }
+
+        /* Back Button */
+        .back-button {
+            background-color: #6c757d;
+            margin-top: 0;
+
+            &:hover {
+                background-color: #5a6268;
+            }
+        }
+
+        /* Start Over Button */
+        .start-over-button {
+            background-color: #dc3545;
+            margin-top: 1vh;
+
+            &:hover {
+                background-color: #c82333;
+            }
+        }
+    }
+
+    /* Links Section */
+    .links {
+        border-radius: 2vh;
+        display: flex;
+        flex-wrap: wrap;
+        color: #f8f9fa;
+        height: 15vh;
+        border: 0.5vh solid #000000;
+        box-shadow: 0.5vh 0.5vh 2vh #17113a;
+        width: 70vw;
+        margin: auto;
+        background-color: #1d1d1d;
+
+        .linkItem {
+            width: 35%;
+
+            button {
+                font-size: 2vh;
+                height: 5vh;
+            }
+        }
+    }
+
+    /* Step and Progress */
+    .step {
+        margin-bottom: 1.5vh;
+    }
+
+    .progress {
+        text-align: right;
+        margin-bottom: 2vh;
+    }
+
+    /* Buttons */
+    button {
+        width: 100%;
+        padding: 1vh;
+        background-color: #1dbfe5;
+        color: #17113a;
+        border: 0.5vh #1c0027 solid;
+        cursor: pointer;
+        border-radius: 1vh;
+        text-shadow: 0.3vh 0.3vh 1vh #17113a;
+        box-shadow: 0.5vh 0.5vh 1vh #17113a;
+        font-size: 3vh;
+        transition: background-color 0.3s, box-shadow 0.3s;
+    
+        &:hover {
+            background-color: #f4a91d;
+            box-shadow: 2px 2px 6px #3ceef9;
+        }
+
+        &.back-button {
+            background-color: #6c757d;
+
+            &:hover {
+                background-color: #5a6268;
+            }
+        }
+    }
+
+
+
+    /* Actions Section */
+    .actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 70vh;
+
+        button {
+            width: 40%;
+            height: 8vh;
+        }
+    }
+
+    /* Tip Section */
+    .tip {
+        background-color: #e9f7ef;
+        border-left: 1vh solid #28a745;
+        padding: 1vh;
+        margin-top: 2vh;
+
+        h4 {
+            margin-top: 0;
+        }
+    }
+
+    /* Preformatted Text */
+    pre {
+        background-color: #f8f9fa;
+        padding: 1vh;
+        overflow-x: auto;
+    }
+
+    /* Progress Indicator */
+    .progress-indicator {
+        margin-top: 1vh;
+        text-align: center;
+        color: #000000;
+
+        span {
+            display: inline-block;
+            width: 30%;
+            height: 2vh;
+            background-color: #6F8FAF;
+            font-size: 0vh;
+            margin: 0 0.2vh;
+            border-radius: 3vh;
+
+            &.active {
+                background-color: #007bff;
+                font-size: 2vh;
+            }
+        }
+    }
+
+    /* Footer */
+    footer {
+        background-color: #1d1d1d;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+
+        .links { 
+
+            h4 {
+                width: 20%;
+
+                a {
+                    color: inherit;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
