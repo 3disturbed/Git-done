@@ -1,8 +1,9 @@
-    {
-      name: "Git-Done",
-      icon: "https://3disturbed.github.io/Git-done/Icon.png",
-      link: "https://3disturbed.github.io/Git-done/",
-      repo: "https://github.com/3disturbed/Git-done",
-      type: "app",
-      target: "frame"
-    }
+{
+  "name": "Git-Done",
+  "icon": "https://3disturbed.github.io/Git-done/Icon.png",
+  "link": "https://3disturbed.github.io/Git-done/",
+  "repo": "https://github.com/3disturbed/Git-done",
+  "type": "app",
+  "target": "frame"
+}
+
